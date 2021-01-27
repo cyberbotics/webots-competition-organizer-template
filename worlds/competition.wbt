@@ -1,8 +1,6 @@
 #VRML_SIM R2021a utf8
 WorldInfo {
-  info [
-    "Competition template"
-  ]
+  title "Competition Template"
   basicTimeStep 8
   coordinateSystem "NUE"
   contactProperties [
