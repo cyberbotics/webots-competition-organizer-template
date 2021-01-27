@@ -1,0 +1,64 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  info [
+    "Competition template"
+  ]
+  basicTimeStep 8
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      coulombFriction [
+        0.1
+      ]
+    }
+  ]
+}
+DEF VIEWPOINT Viewpoint {
+  orientation 0.5689716174997189 0.7934299407430858 0.21619488340887436 5.3899316724080455
+  position -0.5900249152376762 0.5423223794311178 0.6581744434342692
+}
+TexturedBackground {
+  texture "empty_office"
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+  appearance Parquetry {
+    type "light strip"
+  }
+}
+DEF R0 E-puck {
+  translation -0.1 0.05 0
+  rotation 0 1 0 -1.5707953071795862
+  name "Rat0"
+  controller "dummy"
+}
+DEF R1 E-puck {
+  translation 0.1 0.05 0
+  rotation 0 1 0 1.5708
+  name "Rat1"
+  controller "participant_controller"
+}
+Robot {
+  children [
+    Emitter {
+      channel 1024
+    }
+  ]
+  locked TRUE
+  controller "contest_manager"
+  supervisor TRUE
+}
+Solid {
+  children [
+    DEF PLATFORM_SHAPE Shape {
+      appearance OldPlywood {
+      }
+      geometry Box {
+        size 0.3 0.1 0.3
+      }
+    }
+  ]
+  boundingObject USE PLATFORM_SHAPE
+}

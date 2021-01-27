@@ -1,0 +1,18 @@
+name: Record animation
+
+on:
+  push:
+#  schedule:
+#    - cron:  '0 0 * * *'
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Record and deploy the animation
+        uses: cyberbotics/webots-animation-action@master
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BOT_PAT_KEY: ${{ secrets.BOT_PAT_KEY }}
+          BOT_USERNAME: ${{ secrets.BOT_USERNAME }}
