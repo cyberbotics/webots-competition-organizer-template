@@ -1,4 +1,4 @@
-# webots-competition-organizer
+# webots-competition-organizer-template
 
 [![Webots Badge](https://badgen.net/badge/icon/Rankings?label=Webots)](https://cyberbotics.github.io/webots-competition-organizer-template/)
 
