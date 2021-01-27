@@ -12,7 +12,7 @@ You also need to do the same for [the competitor repository](https://github.com/
 
 PAT (Personal Access Token) is necessary to be able to pull a code from a participant's private repositories.
 
-- Generate a new token [here](https://github.com/settings/tokens)
+- Generate a new token [here](https://github.com/settings/tokens). In the `Select scopes` section check `repo`.
   - If this repository is hosted at a GitHub organization you will need to create a new GitHub account and generate the token for it.
 - [Create a new secret](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository), name it `BOT_PAT_KEY` and paste the key you have just generated.
 - [Create a new secret again](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository), name it `BOT_USERNAME` and put your username in it.

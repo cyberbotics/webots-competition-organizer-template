@@ -1,1 +1,2 @@
 https://github.com/cyberbotics/webots-competition-competitor-template
+https://github.com/cyberbotics/webots-competition-competitor-template
