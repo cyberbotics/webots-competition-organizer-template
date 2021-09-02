@@ -2,6 +2,7 @@ name: Record animation
 
 on:
   push:
+# Uncomment to run every midnight
 #  schedule:
 #    - cron:  '0 0 * * *'
 jobs:
